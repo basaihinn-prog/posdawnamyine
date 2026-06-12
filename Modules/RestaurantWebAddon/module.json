@@ -1,0 +1,10 @@
+{
+    "name": "RestaurantWebAddon",
+    "alias": "restaurantwebaddon",
+    "version": "2.0",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": ["Modules\\RestaurantWebAddon\\App\\Providers\\RestaurantWebAddonServiceProvider"],
+    "files": []
+}

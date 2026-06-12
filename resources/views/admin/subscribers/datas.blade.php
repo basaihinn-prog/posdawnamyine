@@ -1,0 +1,75 @@
+@foreach ($subscribers as $subscriber)
+    <tr class="table-content">
+        <td class="table-single-content text-start">{{ ($subscribers->perPage() * ($subscribers->currentPage() - 1)) + $loop->iteration }} <i class="{{ request('id') == $subscriber->id ? 'fas fa-bell text-red' : '' }}"> </td>
+        <td class="table-single-content">{{ formatted_date($subscriber->created_at) }}</td>
+        <td class="table-single-content">{{ $subscriber->business->companyName ?? 'N/A' }}</td>
+        <td class="table-single-content">{{ optional($subscriber->business->category)->name ?? 'N/A' }}</td>
+        <td class="table-single-content">{{ formatted_date($subscriber->created_at) }}</td>
+        <td class="table-single-content">{{ $subscriber->created_at ? formatted_date($subscriber->created_at->addDays($subscriber->duration)) : '' }}</td>
+        <td class="table-single-content">{{ $subscriber->plan->subscriptionName }}</td>
+        <td class="table-single-content d-print-none">{{ $subscriber->gateway->name ?? 'N/A' }}</td>
+
+        <td class="table-single-content d-print-none">
+            <div class="text-{{
+                $subscriber->payment_status == 'paid' ? 'success' :
+                ($subscriber->payment_status == 'unpaid' ? 'warning' : 'danger')
+            }}">
+                {{ ucfirst($subscriber->payment_status) }}
+            </div>
+        </td>
+
+        <td class="table-single-content d-print-none">
+            <div class="dropdown table-action">
+                <button type="button" data-bs-toggle="dropdown">
+                    <i class="far fa-ellipsis-v"></i>
+                </button>
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="#subscriber-view-modal" class="subscriber-view" data-bs-toggle="modal"
+                        data-name="{{ $subscriber->business->companyName ?? 'N/A' }}"
+                        data-image="{{ asset($subscriber->business->pictureUrl ?? 'assets/img/default-shop.svg') }}"
+                        data-manul-attachment="{{ asset($subscriber->notes['attachment'] ?? 'assets/img/icon/no-image.svg') }}"
+                        data-category="{{ optional($subscriber->business->category)->name ?? 'N/A' }}"
+                        data-package="{{ $subscriber->plan->subscriptionName ?? 'N/A' }}"
+                        data-gateway="{{ $subscriber->gateway->name ?? 'N/A' }}"
+                        data-enroll="{{ formatted_date($subscriber->created_at) }}"
+                        data-expired="{{  $subscriber->created_at ? formatted_date($subscriber->created_at->addDays($subscriber->duration)) : '' }}"
+                        >
+                            <img src="{{ asset('assets/images/icons/eye.svg') }}" alt="">
+                            {{ __('View') }}
+                        </a>
+
+                    </li>
+
+                    @can('subscription-update')
+                    <li>
+                        <a target="_blank" href="{{ route('admin.subscription.invoice', $subscriber->id) }}">
+                            <img src="{{ asset('assets/images/icons/invoice.svg') }}" alt="">{{ __('Invoice') }}
+                        </a>
+                    </li>
+                    @endcan
+
+                    @can('subscription-update')
+                    @if($subscriber->payment_status == 'unpaid')
+                    <li>
+                        <a href="#approve-modal" class="modal-approve" data-bs-toggle="modal" data-bs-target="#approve-modal" data-url="{{ route('admin.subscription.paid', $subscriber->id) }}">
+                            <img src="{{ asset('assets/images/icons/accept.svg') }}" alt="">
+                            {{ __('Accept') }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#reject-modal" class="modal-reject" data-bs-toggle="modal" data-bs-target="#reject-modal" data-url="{{ route('admin.subscription.reject', $subscriber->id) }}">
+                            <img src="{{ asset('assets/images/icons/reject.svg') }}" alt="">
+                            {{ __('Reject') }}
+                        </a>
+                    </li>
+                    @endif
+                    @endcan
+                </ul>
+            </div>
+        </td>
+    </tr>
+@endforeach
+
+

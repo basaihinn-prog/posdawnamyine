@@ -1,0 +1,64 @@
+@extends('layouts.master')
+
+@section('title')
+    {{ __('Edit Faq') }}
+@endsection
+
+@section('main_content')
+    <div class="erp-table-section">
+        <div class="container-fluid">
+            <div class="card shadow-sm">
+                <div class="card-bodys">
+                    <div class="table-header p-16">
+                        <h4>{{  __('Edit Faq') }}</h4>
+                        <div>
+                            <a href="{{ route('admin.faqs.index') }}" class="theme-btn print-btn text-light">
+                                <i class="fas fa-list me-1"></i>
+                                {{ __("View List") }}
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="order-form-section p-16">
+                        <form action="{{ route('admin.faqs.update', $faq->id) }}" method="post" enctype="multipart/form-data" class="ajaxform_instant_reload">
+                            @csrf
+                            @method('put')
+
+                            <div class="add-suplier-modal-wrapper">
+                                <div class="row">
+                                    <div class="col-lg-6 mt-2">
+                                        <label class="required">{{ __('Question') }}</label>
+                                        <input type="text" name="question" required class="form-control" placeholder="{{ __('Enter Question') }}" value="{{ $faq->question }}">
+                                    </div>
+
+                                    <div class="col-lg-6 mt-2">
+                                        <label>{{ __('Status') }}</label>
+                                        <div class="gpt-up-down-arrow position-relative">
+                                            <select name="status" class="form-control select-dropdown">
+                                                <option {{ $faq->status == '1' ? 'selected' : '' }} value="1">{{ __('Active') }}</option>
+                                                <option {{ $faq->status == '0' ? 'selected' : '' }} value="0">{{ __('Deactive') }}</option>
+                                            </select>
+                                            <span></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 mt-2">
+                                        <label class="required">{{ __('Question') }}</label>
+                                        <textarea name="answer" class="form-control" placeholder="{{__('Enter answer')}}" required> {{ $faq->answer }} </textarea>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="button-group text-center mt-3">
+                                            <a href="" class="theme-btn border-btn m-2">{{__('Cancel')}}</a>
+                                            <button class="theme-btn m-2 submit-btn">{{__('Update')}}</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection

@@ -1,0 +1,1301 @@
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .container-fluid {
+        padding: 0 50px;
+    }
+
+    .maan-banner-section .maan-banner-text-wrapper .maan-banner-content h1 {
+        font-size: 75px;
+        line-height: 95px;
+    }
+}
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container-fluid {
+        padding: 0 15px;
+    }
+
+    .maan-banner-text-wrapper {
+        margin-top: 40px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-content-wrapper {
+        top: 11rem;
+        left: 13rem;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg {
+        left: 22%;
+    }
+    .maan-banner-section .maan-banner-wrapper .maan-banner-image:before {
+        left: 9%;
+    }
+    .maan-banner-section .maan-shape-bg .shape-1 {
+        left: -5rem;
+    }
+
+    .maan-banner-section .maan-banner-text-wrapper .maan-banner-content h1 {
+        font-size: 70px;
+    }
+
+    .maan-banner-section .maan-shape-bg .shape-2 {
+        left: 25rem;
+    }
+    .maan-product-section .maan-product-wpr .maan-shape-image {
+        right: 6%;
+    }
+    .maan-banner-section .maan-banner-wrapper .maan-content-wrapper .maan-banner-content {
+        width: 245px;
+        padding: 13px 28px;
+    }
+
+    /* .maan-banner-section .maan-service-item-slide {
+        margin-top: -145px;
+        z-index: 9;
+        margin-left: 5rem;
+    } */
+    .maan-banner-section .service-slider-btn .swiper-button-prev,
+    .maan-banner-section .service-slider-btn .swiper-container-rtl .swiper-button-next {
+        left: 9%;
+    }
+
+
+    .maan-banner-section .maan-banner-wrapper .maan-delivary-content {
+        right: 1rem;
+    }
+
+    .maan-icon-menu {
+        text-align: left;
+    }
+
+    .maan-icon-menu ul li {
+        margin-right: 4px;
+    }
+    .maan-btn-style-one {
+        padding: 13px 27px;
+    }
+    .maan-icon-menu ul li a.phone {
+        margin-right: 5px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-delivary-content {
+        padding: 12px 12px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-chat-content {
+        right: 2rem;
+    }
+
+    .gallery-thumbs .swiper-slide {
+        width: 50% !important;
+        height: 100%;
+        opacity: 0.6;
+    }
+
+    .maan-banner-section .maan-leat-image {
+        right: -22rem;
+        overflow: hidden;
+        top: 0rem;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-content-wrapper .maan-banner-content {
+        width: 225px;
+        padding: 13px 15px;
+    }
+
+    .gallery-top {
+        text-align: right;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-content-wrapper {
+        top: 14rem;
+        left: 1rem;
+    }
+
+    .maan-banner-section .maan-leat-image img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-image-box .maan-features-image .maan-image-two {
+        position: absolute;
+        top: -17rem;
+        right: 6rem;
+        z-index: -1;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-image-box .maan-features-image .maan-image-one {
+        top: -5rem;
+    }
+
+    .maan-features-section {
+        height: auto;
+    }
+
+    .maan-footer-widget-box.list.mt-20 {
+        margin-top: -1px;
+    }
+
+    /* .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .maan-service-item {
+       width:100%;
+       height:100%;
+    } */
+    .maan-features-section .maan-features-wpr .maan-features-image-box {
+        width: 550px;
+    }
+
+    .maan-banner-section .maan-banner-text-wrapper .maan-banner-content p {
+        margin-right: 0rem;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-image-box .maan-features-image .maan-image-one img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-image-box .maan-features-image .maan-image-one {
+        right: -9rem;
+        top: 0rem;
+    }
+
+    .maan-feature-container {
+        margin-left: -14rem;
+        margin-top: 5rem;
+    }
+
+    .maan-footer {
+        display: none;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-image-box {
+        width: 420px;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-image-box .maan-features-image .maan-image-one {
+        display: none;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-image-box .maan-features-image .maan-image-two {
+        display: none;
+    }
+    .maan-product-section .maan-product-wpr .maan-shape-image img {
+    width: 360px;
+    height: 500px;
+}
+}
+
+@media only screen and (max-width: 1100px) {
+
+   
+    .maan-btn-style-one {
+        display: none;
+    }
+
+    .maan-banner-section .maan-shape-bg .shape-2 {
+        left: 15rem;
+        top:3rem;
+    }
+    .maan-icon-menu {
+        text-align: center;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-banner-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-banner-image:before {
+        left: auto;
+        right: auto;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-banner-section .maan-banner-text-wrapper .maan-banner-content h4 {
+        margin-bottom: 10px;
+        margin-top: 25px;
+    }
+
+    .maan-banner-section {
+        padding: 85px 0 0;
+    }
+
+   
+    .maan-banner-section .service-slider-btn .swiper-button-prev,
+    .maan-banner-section .service-slider-btn .swiper-container-rtl .swiper-button-next {
+        left: 5%;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-image-box .maan-features-image .maan-image-one img {
+        width: 400px;
+        height: 400px;
+        text-align: right;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-image-box .maan-features-image .maan-image-one {
+        top: 0rem;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg {
+        position: absolute;
+        top: 11%;
+        left: 23%;
+        right: auto;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-image-box .maan-features-image .maan-image-two img {
+        width: 100%;
+        height: 100%;
+        text-align: right;
+    }
+    .maan-product-section .maan-product-wpr .maan-shape-image img {
+        width: 360px;
+        height: 500px;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-image-box .maan-features-image .maan-image-two {
+        top: -10rem;
+        z-index: -1;
+        right: 0rem;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .feature-slider-btn .swiper-button-next,
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .feature-slider-btn .swiper-container-rtl .swiper-button-prev {
+        right: auto;
+        left: 40%;
+        top: 30%;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .feature-slider-btn .swiper-button-prev,
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .feature-slider-btn .swiper-container-rtl .swiper-button-next {
+        left: 33%;
+        right: auto;
+        top: 30%;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-image-box .maan-features-image .maan-image-two {
+        top: -15rem;
+        z-index: -1;
+    }
+
+    .maan-section-title h3 {
+        font-size: 35px;
+    }
+
+    .maan-menu-section .maan-menu-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .maan-table-section .maan-table-wpr .maan-inner-addon.maan-inner-one {
+        width: 340px;
+    }
+
+    .menu-btn-button .maan-btn-style-three {
+        padding: 18px 18px;
+    }
+
+    .blog-section .blog-wpr.grid-3 {
+        grid-gap: 2rem;
+        -ms-grid-columns: 1fr 3rem 1fr 3rem 1fr;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .maan-cta-section .maan-cta .maan-cta-wpr.grid-2 {
+        grid-gap: 1rem;
+        -ms-grid-columns: 1fr 1rem 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-product-section .maan-product-wpr .maan-shape-image {
+        right: -10px;
+    }
+    .maan-product-section .maan-product-wpr .maan-shape-image img {
+        width: 360px;
+        height: 500px;
+    }
+    .maan-product-section .maan-product-content-wpr .maan-product-content .maan-product-button ul a img {
+        width: 200px;
+        height: 67px;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-features-slider .maan-image-three img {
+        display: none;
+    }
+
+    .maan-product-section .maan-product-content-wpr .maan-product-content .maan-product-button ul a img.maan-image-two {
+        width: 200px;
+        height: 67px;
+    }
+
+    .maan-footer-widget .maan-footer-widget-box.list .maan-footer-widget-title {
+        font-size: 18px;
+    }
+
+    .maan-cta-section .maan-cta .maan-cta-wpr .maan-cta-form .input-style-1 {
+        width: 550px;
+        height: 65px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-content-wrapper {
+        top: 15rem;
+        left: 1rem;
+    }
+
+    .maan-product-section .maan-product-wpr .maan-shape-image {
+        top: 16%;
+    }
+
+    /* .maan-features-section .maan-features-wpr .maan-features-image-box .maan-features-image .maan-image-one {
+        position: absolute;
+        top: -5rem;
+        right: -13rem;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-features-slider .maan-image-three img {
+        width: 100%;
+        height: 100%;
+        text-align: right;
+    } */
+    .maan-product-section .maan-product-image-four img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .maan-service-item {
+        width: 100%;
+       height:280px;
+        margin-left: 10rem;
+    } */
+    .maan-banner-section .maan-service-item.three {
+
+        margin-left: 2rem;
+    }
+
+    .maan-banner-section .service-slider-btn .swiper-button-next,
+    .maan-banner-section .service-slider-btn .swiper-container-rtl .swiper-button-prev {
+        right: 70%;
+    }
+
+    .maan-banner-section .maan-banner-text-wrapper .maan-banner-content h1 {
+        font-size: 50px;
+        line-height: 85px;
+    }
+
+    /* .maan-features-section .maan-features-wpr .maan-features-image-box .maan-features-image .maan-image-one {
+        top: 3rem;
+        left: 14%;
+        right: auto;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-image-box .maan-features-image .maan-image-two {
+        top: 0rem;
+        left: 0;
+    } */
+    .maan-features-section {
+        height: auto;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-image-box {
+        display: none;
+    }
+
+    /* .maan-features-section .maan-features-wpr .maan-features-image-box {
+        margin-left: -1rem;
+        width: 100%;
+        z-index: 8;
+        height: 100%;
+    } */
+}
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container-fluid {
+        padding: 0 15px;
+    }
+
+    .maan-icon-menu {
+        text-align: center;
+    }
+
+    .maan-banner-section .maan-banner-text-wrapper .maan-banner-content h4 {
+        margin-bottom: 10px;
+        margin-top: 35px;
+    }
+
+    .maan-icon-menu ul li {
+        margin-right: 10px;
+    }
+    .maan-banner-section .maan-shape-bg .shape-2 {
+        left: 26rem;
+        top: 3rem;
+    }
+    .maan-menu-section .maan-menu-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .maan-partner-section .maan-partner-wpr.grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .maan-menu-section .maan-menu-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-table-section .maan-table-wpr.grid-4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog-section .blog-wpr.grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-cta-section .maan-cta .maan-cta-wpr.grid-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .maan-banner-section .maan-service-item.one {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-banner-section .maan-service-item.two {
+        width: 280px;
+        height: 100%;
+        margin-top: 60px;
+    }
+
+    .gallery-thumbs .swiper-slide {
+        width: 33.3% !important;
+        height: 100%;
+        opacity: 0.6;
+    }
+
+    .maan-banner-section .maan-service-item.three {
+        width: 260px;
+        margin-right: 1rem;
+        margin-left: 2rem;
+        margin-top: 60px;
+    }
+
+    .maan-service-item-slide {
+        margin: 0 2rem;
+    }
+
+    .maan-banner-section .service-slider-btn .swiper-button-next,
+    .maan-banner-section .service-slider-btn .swiper-container-rtl .swiper-button-prev {
+        right: 83%;
+    }
+
+    .maan-banner-section .maan-banner-text-wrapper .maan-banner-content h1 {
+        font-size: 75px;
+        line-height: 100px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-delivary-content {
+        right: 8rem;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-image-box .maan-features-image .maan-image-one {
+        top: -2rem;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .feature-slider-btn .swiper-button-next,
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .feature-slider-btn .swiper-container-rtl .swiper-button-prev {
+        top: 10%;
+        left:45%;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .feature-slider-btn .swiper-button-prev,
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .feature-slider-btn .swiper-container-rtl .swiper-button-next {
+        top: 10%;
+        left:38%;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .maan-service-item {
+     
+        margin-top: 20px;
+    }
+    .maan-section-title p.maan-small-title {
+        font-size: 20px;
+        line-height: 12px;
+        margin-bottom: 6px;
+    }
+
+    .maan-menu-section .button-group button {
+        padding: 20px 20px;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-content {
+        height: 100%;
+    }
+    .maan-features-slider {
+        padding-bottom: 50px;
+    }
+    .maan-menu-section .maan-menu-items .maan-menu-item .maan-image-wpr .maan-menu-image img {
+        width: 100%;
+        height: 100%;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-content img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-table-section .maan-table-wpr.grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-product-section .maan-product-wpr .maan-product-image {
+        text-align: left;
+    }
+
+    .maan-product-section .maan-product-wpr .maan-shape-image {
+        right: 30%;
+    }
+
+    .maan-product-section .maan-product-wpr .maan-product-image {
+        text-align: center;
+    }
+
+    .maan-product-section .maan-product-content-wpr {
+        margin-top: 0;
+    }
+
+    .maan-product-section {
+        padding: 50px 0;
+    }
+
+    .testimonial-section {
+        padding: 50px 0px;
+    }
+
+    .maan-partner-section {
+        padding: 50px 0px;
+    }
+
+    .maan-section-title p.maan-small-title {
+        margin-top: 2px;
+    }
+
+    .maan-menu-section {
+        padding: 50px 0px;
+    }
+
+    .maan-section-title h3 {
+        margin-bottom: 0;
+    }
+
+    .maan-menu-section .maan-section-title {
+        margin-bottom: 30px;
+    }
+
+    .maan-banner-section .maan-leat-image {
+        position: absolute;
+        top: 40rem;
+        right: -15rem;
+        overflow: hidden;
+    }
+
+    .blog-section {
+        padding: 50px 0px;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-banner-image:before {
+        left: 23%;
+        right: auto;
+        bottom: 0;
+        width: 550px;
+        height: 550px;
+        margin: 0 auto;
+        transform: translateX(-50%);
+    }
+
+    .maan-banner-section {
+        padding: 85px 0;
+    }
+
+
+    .maan-banner-section .maan-service-item.three {
+        width: 90%;
+        margin-right: 1rem;
+        margin-left: 2rem;
+        margin-top: 60px !important;
+        margin: 0 auto;
+        margin-bottom: 1rem !important
+    }
+    .maan-banner-section .maan-service-item.two {
+        width: 90%;
+        height: 100%;
+        margin-top: 45px;
+        margin: 0 auto;
+        margin-top: 56px !important;
+        margin-bottom: 1rem !important;
+        margin-left: 15px !important;
+    }
+
+    .maan-banner-section .maan-service-item.one {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 1rem !important;
+        margin-top:30px !important;
+    }
+    .maan-banner-section .maan-service-item .maan-service-content h3 {
+        font-size: 18px;
+    }
+    .maan-banner-section .maan-service-item.one {
+        margin-top: 15px !important;
+    }
+    .maan-banner-section .service-slider-btn .swiper-button-next, .maan-banner-section .service-slider-btn .swiper-container-rtl .swiper-button-prev {
+        right: 78%;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .maan-service-item {
+     
+        width: 100%;
+        height: 100%;
+    }
+    .maan-banner-section .maan-service-item-slide {
+        margin-top: -165px;
+    }
+
+    .service-slider-btn {
+        margin-top: 2rem;
+    }
+
+    .maan-menu-section .button-group button {
+        padding: 0px 20px;
+    }
+
+    .maan-menu-section .maan-menu-item .maan-image-wpr .maan-menu-image img {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .maan-menu-section .element-item {
+        margin-top: 20px;
+    }
+
+    .maan-table-section {
+        padding: 50px 0px;
+    }
+
+    .maan-search-bar .maan-header-search {
+        position: relative;
+        display: none;
+    }
+
+    .maan-blog-section .maan-section-title p.maan-small-title {
+        margin-top: 3px;
+        margin-bottom: 20px;
+    }
+
+    .maan-cta-section .maan-cta {
+        padding: 50px;
+    }
+
+    .maan-cta-section .maan-cta .maan-cta-wpr.grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-cta-section .maan-cta .maan-cta-wpr .maan-cta-form .input-style-1 {
+        width: 350px;
+        height: 65px;
+    }
+
+    .maan-blog-section .blog-wpr.grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-blog-section {
+        padding: 50px 0px;
+    }
+
+    .maan-features-section {
+        padding-bottom: 0;
+    }
+
+    .maan-about-section .maan-about-wrapper .maan-about-image figure img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    .maan-about-section {
+        padding: 50px 0px;
+    }
+
+    .maan-service-section {
+        padding: 50px 0px;
+    }
+
+    .maan-service-section .maan-section-title h3 {
+        margin-top: -13px;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg {
+        top: 11%;
+        left: 0%;
+    }
+
+    .maan-banner-section .maan-leat-image img {
+        width: 400px;
+        height: auto;
+    }
+
+    .maan-banner-section .maan-shape-bg .shape-1 {
+        left: 0rem;
+    }
+}
+
+
+/* Extra small Device. */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 0 14px;
+    }
+
+    /* .maan-menu-nav-sec {
+        padding: 15px 0;
+    } */
+    .maan-icon-menu {
+        text-align: center;
+    }
+
+    .maan-icon-menu ul li {
+        margin-right: 10px;
+    }
+
+    .maan-menu-section .maan-menu-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .maan-partner-section .maan-partner-wpr.grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .maan-menu-section .maan-menu-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-table-section .maan-table-wpr.grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-section .blog-wpr.grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-cta-section .maan-cta .maan-cta-wpr.grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-features-section .maan-features-wpr {
+        display: block;
+    }
+   
+    .maan-btn-style-one {
+        display: none;
+    }
+
+    .maan-banner-section {
+        padding: 50px 0;
+        overflow: hidden;
+    }
+
+    .maan-table-section {
+        padding: 50px 0px;
+    }
+
+    .maan-banner-section .service-slider-btn .swiper-button-next,
+    .maan-banner-section .service-slider-btn .swiper-container-rtl .swiper-button-prev {
+        right: 80%;
+    }
+
+    .maan-cta-section .maan-cta .maan-cta-wpr .maan-cta-form .input-style-1 {
+        width: 390px;
+        height: 65px;
+    }
+
+    .maan-btn-style-two {
+        padding: 17px 20px;
+    }
+
+    .maan-cta-section .maan-cta .maan-cta-wpr.grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+
+    .maan-section-title p.maan-small-title {
+        margin-top: 2px;
+    }
+
+    .maan-banner-section .maan-banner-text-wrapper .maan-banner-content {
+        position: relative;
+        margin-top: 60px;
+    }
+
+    .maan-menu-section .maan-menu-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-image-box {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-image-box .maan-features-image .maan-image-two {
+        top: -9rem;
+        z-index: -1;
+        left: 10%;
+        right: auto;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg {
+        position: absolute;
+        top: 12.2%;
+        left: 4%;
+        right: auto;
+    }
+
+    .maan-cta-section .maan-cta {
+        padding: 50px 40px;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-image-box .maan-features-image .maan-image-one {
+        position: absolute;
+        top: -7rem;
+        right: 13rem;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-image-box {
+        margin-left: 0;
+        width: 100%;
+        height: 50%;
+    }
+
+    .maan-partner-section .maan-partner-wpr.grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-image-box .maan-features-image .maan-image-two img {
+        width: 50%;
+        height: 50%;
+        text-align: right;
+    }
+
+    .gallery-thumbs .swiper-slide {
+        width: 50% !important;
+    }
+
+    /* .maan-features-section {
+    height: auto;
+    padding-bottom: 140px;
+} */
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .maan-service-item {
+        margin-left: 13rem;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .feature-slider-btn .swiper-button-next,
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .feature-slider-btn .swiper-container-rtl .swiper-button-prev {
+        top: 11%;
+        left: 50%;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .feature-slider-btn .swiper-button-prev,
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .feature-slider-btn .swiper-container-rtl .swiper-button-next {
+        top: 11%;
+        left: 42%;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .maan-service-item {
+
+        width: 300px;
+        height: auto;
+        padding: 0px 25px 25px 25px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .maan-banner-section .maan-banner-text-wrapper .maan-banner-content h1 {
+        font-size: 56px;
+        line-height: 80px;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .maan-service-item {
+        margin-left: 0rem;
+    }
+
+    .maan-site-breadcrumb {
+        height: 200px;
+    }
+
+    .maan-site-breadcrumb .maan-breadcrumb-title {
+        font-size: 36px;
+        line-height: 55px;
+    }
+
+    .maan-about-section {
+        padding: 50px 0px;
+    }
+
+    .maan-section-title h5 {
+        font-size: 16px;
+        line-height: 38px;
+    }
+
+    .maan-about-section .maan-about-wrapper .maan-about-image figure img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-service-section {
+        padding: 50px 0px;
+    }
+    .maan-features-slider {
+        padding-bottom: 80px;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-content {
+        height: 100%;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-content img {
+        width: 100%;
+        height: 100%;
+    }
+    .maan-about-section .maan-section-title h3 {
+        margin-top: -13px;
+    }
+    .maan-blog-section .maan-section-title h3 {
+        margin-top: -15px;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .maan-service-item {
+        width: 100%;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg {
+        left: 0%;
+    }
+    .maan-product-section .maan-product-wpr .maan-shape-image {
+        top: 25%;
+    }
+
+}
+
+/* SM Small Device :550px. */
+
+
+@media only screen and (max-width: 767px) {
+    .maan-search-bar .maan-header-search {
+        position: relative;
+        display: none;
+    }
+
+    .maan-partner-section .maan-partner-wpr.grid-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .maan-table-section .maan-table-wpr.grid-4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .maan-blog-section .blog-wpr.grid-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .maan-cta-section .maan-cta .maan-cta-wpr.grid-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .maan-cta-section .maan-cta .maan-cta-wpr .maan-cta-form .input-style-1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .maan-cta-button {
+        text-align: center;
+    }
+
+    .maan-footer-widget {
+        padding: 50px 0 0 0;
+    }
+
+    .maan-blog-section {
+        padding: 50px 0px;
+    }
+
+    .testimonial-section {
+        padding: 50px 0px;
+    }
+
+    .maan-icon-menu {
+        display: none;
+    }
+
+    .maan-banner-section .maan-banner-text-wrapper .maan-banner-content {
+        margin-top: 100px;
+    }
+
+    .maan-banner-section .maan-banner-text-wrapper .maan-banner-content h1 {
+        font-size: 37px;
+        line-height: 60px;
+    }
+
+    .maan-banner-section .maan-leat-image {
+        display: none;
+    }
+
+    .maan-banner-section .maan-service-item {
+        display: none;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-content-wrapper {
+        display: none;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-delivary-content {
+        display: none;
+    }
+
+    .maan-banner-section .maan-banner-wrapper .maan-chat-content {
+        right: 0rem;
+        top: -4rem;
+    }
+
+    .maan-banner-section .maan-banner-text-wrapper .maan-banner-content p {
+        margin-right: 0rem;
+    }
+
+    .maan-table-section .maan-table-wpr .maan-inner-addon.maan-inner-one {
+        width: 100%;
+    }
+
+    .maan-product-section .maan-product-wpr .maan-shape-image {
+        top: -4%;
+    }
+
+    .maan-product-section .maan-product-content-wpr .maan-product-content .maan-product-button ul li {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .maan-product-section {
+        padding: 50px 0 0px;
+        padding-bottom: 20px;
+    }
+
+    /* .logo {
+    text-align: center;
+} */
+    .mean-container .mean-bar {
+        background: transparent;
+    }
+
+    .mean-container a.meanmenu-reveal {
+        top: -40px;
+        color: #000;
+    }
+
+    .mean-container a.meanmenu-reveal span {
+        display: block;
+        background: #000;
+        height: 3px;
+        margin-top: 3px;
+    }
+
+    .maan-partner-section {
+        padding: 50px 0px;
+    }
+
+    .mean-container .mean-nav {
+        margin-top: 0px;
+    }
+
+    .maan-menu-nav-sec {
+        padding: 10px 0;
+    }
+
+    .maan-service-content {
+        margin-top: 20px;
+    }
+
+    .maan-banner-section .maan-banner-text-wrapper .maan-banner-content {
+        margin-top: 50px;
+    }
+
+    .mean-container .mean-bar {
+        min-height: 0px;
+    }
+
+    .maan-section-title p.maan-small-title {
+        margin-top: -10px;
+    }
+
+    .maan-menu-section {
+        position: relative;
+        padding: 50px 0px;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-image-box {
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    
+
+    .maan-section-title h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .maan-service-item {
+        margin-left: 0rem;
+    }
+
+    .maan-site-breadcrumb {
+        height: 200px;
+    }
+
+    .maan-site-breadcrumb .maan-breadcrumb-title {
+        line-height: 40px;
+    }
+
+    .maan-about-section {
+        padding: 50px 0px;
+    }
+
+    .maan-about-section .maan-about-wrapper .maan-about-image figure img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .maan-service-section {
+        padding: 50px 0px;
+    }
+
+    .maan-cta-section .maan-cta {
+        padding: 40px;
+    }
+
+    .maan-footer-widget .maan-footer-widget-box.list .maan-footer-widget-title {
+        margin-bottom: 40px;
+    }
+
+    .maan-footer-widget-box {
+        margin-bottom: 30px;
+    }
+
+    .maan-cta-section .maan-cta .maan-cta-wpr .maan-cta-form .input-style-1 {
+        padding: 10px;
+    }
+
+    .maan-cta-section .maan-cta .maan-cta-wpr .maan-cta-form form button {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+    }
+
+    .maan-cta-section .maan-cta .maan-cta-wpr .maan-cta-form form button.btn-sub {
+        font-size: 16px;
+    }
+
+    .maan-product-section .maan-product-content-wpr {
+        margin-top: 50px;
+
+    }
+
+
+    .maan-product-section .maan-product-wpr .maan-shape-image {
+        top: 20%;
+        right:0;
+        left:10%;
+    }
+    .maan-banner-section .maan-banner-text-wrapper .maan-banner-content h1 {
+        font-size: 35px;
+        line-height: 60px;
+    }
+    .maan-banner-section .maan-shape-bg .shape-2 img {
+        width: 100%;
+        height: 100%;
+        -webkit-animation: bounceUp 5s infinite;
+        animation: bounceUp 5s infinite;
+    }
+   
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .maan-service-item {
+        margin-left: 0rem;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-content {
+        height: 100%;
+    }
+    .maan-service-bg .maan-section-title {
+        margin-bottom: 20px;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .maan-service-item {
+        width: 250px;
+    }
+    .maan-service-content {
+        margin-top: 10px;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-content img {
+        width: 100%;
+        height: 100%;
+    }
+    .maan-section-title p.maan-small-title {
+        margin-top: -10px;
+    }
+    .topcontrol {
+        margin-bottom: 100px;
+    }
+    .maan-about-section .maan-section-title h3 {
+        margin-top: -5px;
+    }
+    .maan-service-section .maan-section-title h3 {
+        margin-top: -5px;
+    }
+    .maan-blog-section .maan-section-title h3 {
+        margin-top: -6px;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .maan-service-item {
+        width: 100%;
+    }
+   
+    .maan-section-title p.maan-small-title {
+        font-size: 18px;
+    }
+    .maan-blog-section .blog-wpr .maan-blog-item .maan-blog-info .post-title {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 575px) { 
+    .maan-features-slider {
+        padding: 150px 0px;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .feature-slider-btn .swiper-button-next, .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .feature-slider-btn .swiper-container-rtl .swiper-button-prev {
+        top: 11%;
+        left: 67%;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .feature-slider-btn .swiper-button-prev, .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .feature-slider-btn .swiper-container-rtl .swiper-button-next {
+        top: 11%;
+        left: 60%;
+    }
+    .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .feature-slider-btn .swiper-button-next, .maan-features-section .maan-features-wpr .maan-features-content .maan-service-bg .feature-slider-btn .swiper-container-rtl .swiper-button-prev {
+        top: 11%;
+        left: 80%;
+    }
+    .maan-product-section .maan-product-content-wpr {
+        margin-top: 0px;
+    }
+    .maan-product-section .maan-product-wpr .maan-shape-image img {
+        width: 330px;
+        height: 460px;
+    }
+    .maan-product-section .maan-product-wpr .maan-shape-image {
+        top: 3%;
+        right: 0;
+        left: 18%;
+    }
+   
+}
+
+/* Responsive start */
+/* @media(max-width: 1399px){
+
+} */

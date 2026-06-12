@@ -1,0 +1,119 @@
+@foreach($sales as $sale)
+    <tr>
+        @usercan ('sales.delete')
+        <td class="w-60 text-start checkbox">
+            <input type="checkbox" name="ids[]" class="delete-checkbox-item  multi-delete" value="{{ $sale->id }}">
+        </td>
+        @endusercan
+        <td>{{ ($sales->currentPage() - 1) * $sales->perPage() + $loop->iteration }}</td>
+        <td class="text-start">{{ formatted_date($sale->saleDate) }}</td>
+        <td class="text-start">{{ $sale->invoiceNumber }}</td>
+        @if (request('type') != 'online-sale')
+        <td class="text-start">{{ $sale->party->name?? '' }}</td>
+        @endif
+        <td class="text-start">{{ currency_format($sale->totalAmount, currency: business_currency()) }}</td>
+        <td class="text-start">{{ currency_format($sale->paidAmount, currency: business_currency()) }}</td>
+        <td class="text-start">{{ currency_format($sale->dueAmount, currency: business_currency()) }}</td>
+        @if (request('type') != 'online-sale')
+        <td class="text-start">{{  $sale->payment_type->name ?? '' }}</td>
+        @endif
+        @if (request('type') == 'online-sale')
+        <td class="text-start">{{  $sale->business_gateway->name ?? '' }}</td>
+        @endif
+        <td>
+          @if($sale->dueAmount == 0)
+                <div class="status-badge paid-badge">{{ __('Paid') }}</div>
+            @elseif($sale->dueAmount > 0 && $sale->dueAmount < $sale->totalAmount)
+                <div class="status-badge partial-paid">{{ __('Partial') }}</div>
+            @else
+                <div class="status-badge unpaid-badge">{{ __('Unpaid') }}</div>
+            @endif
+        </td>
+        @usercan('sales.update')
+        <td class="text-center">
+        @if($sale->table_id)
+            <div class="custom-select-wrapper-status border-0">
+                <select class="custom-select-status border-0 table-status-change" data-sale-id="{{ $sale->id }}" data-url="{{ route('business.sales.status', $sale->id) }}">
+                    @if ($sale->status == 'pending')
+                    <option value="pending" {{ $sale->status == 'pending' ? 'selected' : '' }}>Pending</option>
+                    <option value="completed" {{ $sale->status == 'completed' ? 'selected' : '' }}>Completed</option>
+                    @else
+                        <option value="completed" selected>Completed</option>
+                    @endif
+                </select>
+            </div>
+            @else
+            <div></div>
+            @endif
+        </td>
+        @endusercan
+        @usercan('sales.update')
+        <td class="text-center">
+            <div class="custom-select-wrapper-status border-0">
+                <select class="custom-select-status border-0 status-change" data-id="{{ $sale->id }}" data-url="{{ route('business.sales.orderStatus', $sale->id) }}">
+                    <option value="pending" {{ $sale->order_status === 'pending' ? 'selected' : '' }}>Pending</option>
+                    <option value="confirmed" {{ $sale->order_status === 'confirmed' ? 'selected' : '' }}>Confirmed</option>
+                    <option value="processing" {{ $sale->order_status === 'processing' ? 'selected' : '' }}>Procssing</option>
+                    <option value="delivered" {{ $sale->order_status === 'delivered' ? 'selected' : '' }}>Delivered</option>
+                </select>
+            </div>
+        </td>
+        @endusercan
+        <td>
+            @if($sale->sales_type == 'pick_up')
+                  <div>{{ __('Pick Up') }}</div>
+            @elseif($sale->sales_type == 'delivery')
+                <div>{{ __('Delivery') }}</div>
+            @else
+                <div>{{ __('Dine In') }}</div>
+            @endif
+        </td>
+        <td class="d-print-none">
+            <div class="d-flex align-items-center justify-content-end">
+                <div class="icon-buttons">
+                    @usercan('sales.view')
+                    <a title="{{__('Invoice')}}" data-bs-placement="top" target="_blank" href="{{ request('type') == 'online-sale' ? route('business.sales.invoice', ['id' => $sale->id, 'type' => 'online-sale']) : route('business.sales.invoice', $sale->id) }}" class="action-btn view">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 7.125C3.42893 7.125 1.75 8.80393 1.75 10.875V16.875C1.75 17.8415 2.5335 18.625 3.5 18.625H7.5V16.375H17.5V18.625H21.5C22.4665 18.625 23.25 17.8415 23.25 16.875V10.875C23.25 8.80393 21.5711 7.125 19.5 7.125H5.5ZM19 10.375C18.4477 10.375 18 10.8227 18 11.375C18 11.9273 18.4477 12.375 19 12.375H19.009C19.5613 12.375 20.009 11.9273 20.009 11.375C20.009 10.8227 19.5613 10.375 19.009 10.375H19Z" fill="#A7A7A7"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 3.375C6.75 2.13236 7.75736 1.125 9 1.125H16C17.2426 1.125 18.25 2.13236 18.25 3.375V5.375C18.25 5.78921 17.9142 6.125 17.5 6.125H7.5C7.08579 6.125 6.75 5.78921 6.75 5.375V3.375Z" fill="#A7A7A7"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 15.875C6.5 15.3227 6.94772 14.875 7.5 14.875H17.5C18.0523 14.875 18.5 15.3227 18.5 15.875V19.875C18.5 21.5319 17.1569 22.875 15.5 22.875H9.5C7.84315 22.875 6.5 21.5319 6.5 19.875V15.875ZM8.5 16.875V19.875C8.5 20.4273 8.94772 20.875 9.5 20.875H15.5C16.0523 20.875 16.5 20.4273 16.5 19.875V16.875H8.5Z" fill="#A7A7A7"/>
+                        </svg>
+                    </a>
+                    @endusercan
+                    @usercan('sales.update')
+                    @if (request('type') != 'online-sale')
+                    <a title="{{__('Edit')}}" data-bs-placement="top" href="{{ route('business.sales.edit', $sale->id) }}" class="action-btn edit">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.6479 19.4575C11.6479 18.9869 12.0294 18.6055 12.5 18.6055H17.612C18.0825 18.6055 18.4641 18.9869 18.4641 19.4575C18.4641 19.9281 18.0825 20.3095 17.612 20.3095H12.5C12.0294 20.3095 11.6479 19.9281 11.6479 19.4575Z"
+                                fill="#979797" />
+                            <path
+                                d="M18.5061 3.93895C17.8507 3.6141 17.081 3.6141 16.4255 3.93895C16.0785 4.11088 15.7751 4.41482 15.3831 4.80746L14.6299 5.5606L18.9418 9.87244L19.6949 9.11929C20.0875 8.7273 20.3915 8.42385 20.5634 8.0769C20.8883 7.42137 20.8883 6.65174 20.5634 5.99621C20.3915 5.64926 20.0875 5.3458 19.6949 4.95382L19.5486 4.80746C19.1566 4.41482 18.8531 4.11088 18.5061 3.93895Z"
+                                fill="#979797" />
+                            <path
+                                d="M18.0381 10.7767L13.7264 6.46484L5.30538 14.8857C4.88409 15.3063 4.55068 15.639 4.37123 16.0722C4.19179 16.5054 4.19224 16.9765 4.19281 17.5717L4.19288 19.671C4.19288 20.024 4.47897 20.3101 4.83189 20.3101L6.93125 20.3101C7.52647 20.3107 7.99755 20.3112 8.43076 20.1317C8.86396 19.9523 9.19674 19.6189 9.61723 19.1976L18.0381 10.7767Z"
+                                fill="#979797" />
+                        </svg>
+                    </a>
+                    @endif
+                    @endusercan
+                    @usercan('sales.delete')
+                    <a title="{{__('Delete')}}" data-bs-placement="top" href="{{ route('business.sales.destroy', $sale->id) }}" class="confirm-action action-btn delete"
+                        data-method="DELETE">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M18.6273 15.5714C18.5653 16.5711 18.5161 17.3644 18.4154 17.998C18.3119 18.6479 18.1464 19.1891 17.8154 19.6625C17.5125 20.0955 17.1226 20.4611 16.6704 20.7357C16.1761 21.036 15.6242 21.1673 14.9672 21.2301L10.0171 21.23C9.35943 21.167 8.80689 21.0355 8.31224 20.7347C7.85974 20.4595 7.46969 20.0934 7.16693 19.6596C6.83598 19.1854 6.671 18.6435 6.56838 17.9927C6.46832 17.3581 6.42023 16.5636 6.35961 15.5625L5.83337 6.87109H19.1667L18.6273 15.5714ZM10.4798 17.4097C10.1451 17.4097 9.87378 17.1419 9.87378 16.8114V12.0251C9.87378 11.6947 10.1451 11.4268 10.4798 11.4268C10.8146 11.4268 11.0859 11.6947 11.0859 12.0251V16.8114C11.0859 17.1419 10.8146 17.4097 10.4798 17.4097ZM15.1263 12.0251C15.1263 11.6947 14.8549 11.4268 14.5202 11.4268C14.1855 11.4268 13.9142 11.6947 13.9142 12.0251V16.8114C13.9142 17.1419 14.1855 17.4097 14.5202 17.4097C14.8549 17.4097 15.1263 17.1419 15.1263 16.8114V12.0251Z"
+                                fill="#979797" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.6746 2.79397C14.1673 2.83166 14.6303 2.96028 15.0279 3.21397C15.322 3.4016 15.5262 3.63127 15.7008 3.88001C15.8625 4.11051 16.0253 4.39789 16.21 4.72389L16.5821 5.38044H20.3462C20.8277 5.38044 21.218 5.71436 21.218 6.12627C21.218 6.53818 20.8277 6.8721 20.3462 6.8721C15.1153 6.8721 9.88483 6.8721 4.6539 6.8721C4.17242 6.8721 3.7821 6.53818 3.7821 6.12627C3.7821 5.71436 4.17242 5.38044 4.6539 5.38044H8.49831L8.80849 4.7983C8.98857 4.46029 9.14716 4.1626 9.30646 3.92373C9.4783 3.66606 9.68172 3.42762 9.97935 3.23228C10.3819 2.96811 10.8542 2.83419 11.3579 2.79495C11.7371 2.76542 12.1194 2.76948 12.5001 2.77001C12.9454 2.77062 13.3457 2.7688 13.6746 2.79397ZM10.4145 5.38044H14.6444C14.4468 5.03185 14.3204 4.81091 14.2058 4.64767C14.0382 4.40876 13.8373 4.30403 13.5193 4.27969C13.2932 4.2624 12.9986 4.2617 12.5301 4.2617C12.0499 4.2617 11.7477 4.26242 11.516 4.28046C11.1898 4.30586 10.9865 4.41458 10.8209 4.66293C10.7124 4.82568 10.5942 5.04353 10.4145 5.38044Z"
+                                fill="#979797" />
+                        </svg>
+                    </a>
+                    @endusercan
+                </div>
+            </div>
+        </td>
+    </tr>
+@endforeach
